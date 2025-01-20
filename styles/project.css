@@ -48,16 +48,19 @@ header nav ul li a hover{
 .slider{
     position: relative;
     width: 80%;
-    max-width: 800px;
     overflow: hidden;
 }
 .slides{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.slides{
+.slide{
     min-width: 100%;
-    height: auto;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+    display: block;
 }
 button{
     position: absolute;
@@ -70,11 +73,24 @@ button{
     cursor: pointer;
     z-index: 1;
 }
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
 .prev{
     left: 10px;
+    font-size: 25px;
 }
 .next{
     right: 10px;
+    font-size: 25px;
 }
 footer{
     width: 100%;

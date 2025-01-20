@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <link rel="stylesheet" href="styles/project.css">
-    <script src="scripts/project.js"></script>
+    <script src="scripts/project.js" defer></script>
     
 </head>
 
@@ -24,9 +24,9 @@
     <main>
     <div class="slider">
         <div class="slides">
-            <img src="images/tulips.jpeg" class="slide" alt="Image1">
-            <img src="images/falls.jpeg" class="slide" alt="Image2">
-            <img src="images/sunrays.jpeg" class="slide" alt="Image3">
+            <div class="slide"><img src="images/falls.jpeg" alt="falls"></div>
+            <div class="slide"><img src="images/sunrays.jpeg" alt="sunrays"></div>
+            <div class="slide"><img src="images/tulips.jpeg" alt="tulips"></div>
         </div>
         <button class="prev">Prev</button>
         <button class="next">Next</button>
