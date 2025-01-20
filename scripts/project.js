@@ -9,7 +9,7 @@ document.querySelector('.next').addEventListener('click', ()=>{
 });
 
 document.querySelector('.prev').addEventListener('click',()=>{
-    currentIndex = (currentIndex - 1 + %totalSlides)% totalSlides;
+    currentIndex = (currentIndex - 1 + totalSlides)% totalSlides;
     updateSlider();
 })
 
