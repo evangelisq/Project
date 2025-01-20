@@ -31,7 +31,7 @@ header nav ul li a hover{
 .menu-icon {
     display: none;
 }
-@media  and (max-width: 600px); {
+@media (max-width: 600px) {
     header nav ul li :not(:last-child){
         display: none;
     }
